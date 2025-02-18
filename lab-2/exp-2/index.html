@@ -4,6 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio-home</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; 
+            color: #333; 
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px; 
+        }
+
+        h1 {
+            color: #555;
+            margin-top: 20px;
+            padding-left: 20px; 
+        }
+
+        div {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #eee;
+        }
+
+        a {
+            color: #007bff; 
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+       
+        #contact {
+            text-align: center;
+        }
+
+        #contact a {
+            margin: 0 10px; 
+        }
+
+        
+        @media (max-width: 768px) {
+            nav a {
+                display: block; 
+                margin: 5px 0;
+            }
+
+            table {
+                font-size: 0.9em; 
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -13,46 +100,42 @@
         <a href="#achievements">Achievements</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
-        
-        
     </nav>
-    <br>
-    <hr>
-    <h1 id="#aboutme">About me</h1>
+
+    <h1 id="aboutme">About me</h1>
     <div>
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, eum veritatis. Eveniet molestias suscipit architecto consectetur deserunt, vel sit accusantium ipsa incidunt ab quae nisi, voluptates officiis modi? Facilis, atque.
 
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque alias reprehenderit ut omnis vero nemo quae dignissimos laudantium, similique porro hic quo distinctio praesentium delectus at voluptatum dicta! Hic, ullam!
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, fuga eligendi quibusdam adipisci ea nobis voluptates. Saepe, iure nam nostrum eos odio minima facilis odit numquam cum illo, molestias aut.🙏
-
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, fuga eligendi quibusdam adipisci ea nobis voluptates. Saepe, iure nam nostrum eos odio minima facilis odit numquam cum illo, molestias aut.
         </p>
     </div>
-    <h1 id="#skills">Skills</h1>
+
+    <h1 id="skills">Skills</h1>
     <div>
-        <p>
-            <ul>
-                
-                <li>Languages<pre>      Java</pre><pre>      C++</pre>
-                    <pre>      C</pre>
-                    <pre>      Javascript</pre>
-                    <pre>      Python</pre>
-                </li>
-                <li>
-                Frameworks<pre>      Express</pre>
-                
-                </li>
-                <li>
-                    databases<pre>      MongoDB</pre><pre>      MySql</pre>
-                    
-                </li>
-           
-            </ul>
-        </p>
+        <ul>
+            <li>Languages
+                <pre>      Java</pre>
+                <pre>      C++</pre>
+                <pre>      C</pre>
+                <pre>      Javascript</pre>
+                <pre>      Python</pre>
+            </li>
+            <li>
+                Frameworks
+                <pre>      Express</pre>
+            </li>
+            <li>
+                Databases
+                <pre>      MongoDB</pre>
+                <pre>      MySql</pre>
+            </li>
+        </ul>
     </div>
 
-    <h1 id = "#projects">Projects</h1>
+    <h1 id="projects">Projects</h1>
     <div>
         <dl>
             <dt>project-1:</dt>
@@ -64,18 +147,18 @@
             <br>
 
             <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellat cum sunt atque eius autem dolorem facere nulla repudiandae, architecto, vel commodi suscipit culpa ex obcaecati! Dolorum culpa quisquam sapiente.<br><br><a href="www.google.com">Link to Project</a></dd>
-
         </dl>
     </div>
 
-    <h1 id = "#achievements">Achivements</h1>
-
+    <h1 id="achievements">Achievements</h1>
     <div>
-        <table  border="1">
+        <table border="1">
             <thead>
-                <th>Achievement</th>
-                <th>Year</th>
-                <th>Link to Certificate</th>
+                <tr>
+                    <th>Achievement</th>
+                    <th>Year</th>
+                    <th>Link to Certificate</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -97,14 +180,15 @@
         </table>
     </div>
 
-    <h1 id="#education"> Education profile </h1>
-
+    <h1 id="education">Education profile</h1>
     <div>
-        <table  border="1">
+        <table border="1">
             <thead>
-                <th>Degree</th>
-                <th>Year</th>
-                <th>Institution</th>
+                <tr>
+                    <th>Degree</th>
+                    <th>Year</th>
+                    <th>Institution</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -125,13 +209,12 @@
             </tbody>
         </table>
     </div>
-    <h1 id="#contact">Contact information</h1>
-    <div>
+
+    <h1 id="contact">Contact information</h1>
+    <div id="contact">
         <p>Email: dbdr04@gmail.com</p>
         <p>LinkedIn: <a href="www.google.com">sampleUsername</a></p>
-        <phone>+91 8985365218</phone>
+        <p>Phone: +91 8985365218</p>
     </div>
-    
-  
 </body>
 </html>

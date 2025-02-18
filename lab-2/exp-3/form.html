@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feedback-form</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f4f4f4; 
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        min-height: 100vh; 
+        margin: 0; 
+      }
+
+      .form-contianer {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 400px; 
+      }
+
+      label {
+        display: block; 
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: calc(100% - 12px); 
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        height: 120px;
+        resize: vertical; 
+      }
+
+    
+     
+
+      .button {
+        background-color: #007bff; 
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #0056b3; 
+      }
+
+
+      .rating span::before {
+        content: "\2605"; 
+
+        display: inline-block;
+
+        font-size: 20px;
+
+        color: #ddd; 
+      }
+
+      .rating span[data-rating]:hover::before,
+      .rating span[data-rating]:nth-child(-n + 0)::before {
+       
+
+        color: gold; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-contianer">
+      <form>
+        <label>Name</label>
+        <input type="text" />
+        <br />
+        <label>Email</label>
+        <input type="email" placeholder="sample@gmail.com" />
+        <br />
+        <label>Phone</label>
+        <input type="tel" />
+        <br />
+
+        <div class="rating">
+          <p>Rating</p>
+          <span data-rating="1"></span>
+          <span data-rating="2"></span>
+          <span data-rating="3"></span>
+          <span data-rating="4"></span>
+          <span data-rating="5"></span>
+        </div>
+
+        <br />
+        <p>Questions regarding product or service</p>
+        <textarea
+          id="comment-box"
+          placeholder="Write your comment here..."
+        ></textarea>
+        <br />
+        <p>Additional Comments</p>
+        <textarea
+          id="comment-box"
+          placeholder="Write your comment here..."
+        ></textarea>
+        <br />
+        <br />
+        <br />
+        <button class="button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
